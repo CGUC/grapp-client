@@ -1,22 +1,21 @@
-import { StyleSheet } from "react-native";
-import defaultStyles from '../../../../styles/styles'
+import { StyleSheet } from 'react-native';
+import defaultStyles from '../../../../styles/styles';
 
-export default (styles = StyleSheet.create({
-	buttonUnselected: {
+export default StyleSheet.create({
+  buttonUnselected: {
     flex: 0.5,
     justifyContent: 'center',
-    alignItems:'center',
-    ...defaultStyles.primaryColor
+    alignItems: 'center',
+    ...defaultStyles.primaryColor,
   },
   buttonSelected: {
     flex: 0.5,
     justifyContent: 'center',
-    alignItems:'center',
-    ...defaultStyles.darkenedPrimaryColor
-
+    alignItems: 'center',
+    ...defaultStyles.darkenedPrimaryColor,
   },
   text: {
-    color: 'white'
+    color: 'white',
   },
   notice: {
     backgroundColor: 'red',
@@ -25,7 +24,7 @@ export default (styles = StyleSheet.create({
     alignSelf: 'center',
   },
   image: {
-    height:30,
-    width: 30
-  }
-}));
+    height: 30,
+    width: 30,
+  },
+});

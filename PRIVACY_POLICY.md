@@ -1,4 +1,5 @@
 ## Privacy Policy
+
 _Last updated: August 31, 2019_
 
 Project Stairwell built the Skybunk app as an Open Source app. This SERVICE is provided by Project Stairwell at no cost and is intended for use as is.
@@ -21,10 +22,10 @@ Cookies are files with a small amount of data that are commonly used as anonymou
 
 We may employ third-party companies and individuals due to the following reasons:
 
-*   To facilitate our Service;
-*   To provide the Service on our behalf;
-*   To perform Service-related services; or
-*   To assist us in analyzing how our Service is used.
+- To facilitate our Service;
+- To provide the Service on our behalf;
+- To perform Service-related services; or
+- To assist us in analyzing how our Service is used.
 
 We want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
 

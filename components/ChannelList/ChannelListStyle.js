@@ -1,11 +1,12 @@
-import { StyleSheet } from "react-native";
-export default (styles = StyleSheet.create({
+import { StyleSheet } from 'react-native';
+
+export default StyleSheet.create({
   channelCard: {
     flex: 1,
-    flexDirection: "row",
-    alignSelf: "stretch",
-    justifyContent: "space-between",
-    alignItems: "center",
+    flexDirection: 'row',
+    alignSelf: 'stretch',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     borderBottomColor: '#CCCCCC',
     borderBottomWidth: 1,
     height: 50,
@@ -20,14 +21,14 @@ export default (styles = StyleSheet.create({
   },
   channelText: {
     fontSize: 20,
-    textAlign:'left',
+    textAlign: 'left',
   },
   notificationBell: {
     width: 40,
-    height: 40
+    height: 40,
   },
   rightArrow: {
     width: 40,
-    height: 40
+    height: 40,
   },
-}));
+});

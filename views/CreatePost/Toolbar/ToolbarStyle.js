@@ -1,7 +1,6 @@
-import { StyleSheet, Dimensions } from "react-native";
-const { height, width } = Dimensions.get('window');
+import { StyleSheet } from 'react-native';
 
-export default (styles = StyleSheet.create({
+export default StyleSheet.create({
   view: {
     flexDirection: 'row',
     marginTop: 5,
@@ -9,5 +8,5 @@ export default (styles = StyleSheet.create({
   icon: {
     paddingHorizontal: 8,
     paddingVertical: 4,
-  }
-}));
+  },
+});

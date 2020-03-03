@@ -5,10 +5,8 @@ import PropTypes from 'prop-types';
 export default class Banner extends React.Component {
   bgStyle() {
     let bgColor = '#FEFEFE';
-    if (this.props.success)
-      bgColor = '#0A0';
-    else if (this.props.error)
-      bgColor = '#A00';
+    if (this.props.success) bgColor = '#0A0';
+    else if (this.props.error) bgColor = '#A00';
 
     return {
       backgroundColor: bgColor,
@@ -17,17 +15,16 @@ export default class Banner extends React.Component {
       paddingBottom: 2,
       marginBottom: 10,
       borderRadius: 10,
-    }
+    };
   }
 
   textStyle() {
     let textColour = 'black';
-    if (this.props.success || this.props.error)
-      textColour = 'white';
+    if (this.props.success || this.props.error) textColour = 'white';
 
     return {
       color: textColour,
-    }
+    };
   }
 
   render() {
@@ -40,13 +37,11 @@ export default class Banner extends React.Component {
 }
 
 Banner.defaultProps = {
-  neutral: true,
   success: false,
   error: false,
 };
 
 Banner.propTypes = {
-  neutral: PropTypes.bool,
   success: PropTypes.bool,
   error: PropTypes.bool,
 };

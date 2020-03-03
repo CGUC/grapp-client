@@ -1,20 +1,20 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
-primaryColor = "#C1464E"
+const primaryColor = '#C1464E';
 
-export default (styles = StyleSheet.create({
+export default StyleSheet.create({
   backgroundTheme: {
-    //backgroundColor: "#e4e3eb",
+    // backgroundColor: "#e4e3eb",
     backgroundColor: '#fff',
-    color: "#000"
+    color: '#000',
   },
   primaryColor: {
-    backgroundColor: primaryColor
+    backgroundColor: primaryColor,
   },
   darkenedPrimaryColor: {
-    backgroundColor: "#943036"
+    backgroundColor: '#943036',
   },
   primaryBorderColor: {
-    borderColor: primaryColor
-  }
-}));
+    borderColor: primaryColor,
+  },
+});

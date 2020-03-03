@@ -3,10 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "babel-preset-expo": "^5.0.0",
-    "jest-expo": "~32.0.0",
+    "babel-eslint": "^10.0.3",
+    "babel-preset-expo": "^8.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jest": "^23.6.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-react-native": "^3.8.1",
+    "husky": "^4.2.1",
+    "jest-expo": "^36.0.1",
+    "lint-staged": "^10.0.4",
+    "prettier": "1.19.1",
     "react-native-scripts": "2.0.1",
-    "react-test-renderer": "16.8.3"
+    "react-test-renderer": "^16.8.3"
   },
   "main": "./node_modules/expo/AppEntry.js",
   "scripts": {
@@ -14,10 +28,18 @@
     "eject": "expo eject",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "test": "jest"
+    "test": "jest --coverage",
+    "code-format": "npx eslint \"./**/*.js\" \"./**/*.jsx\" --fix && npx prettier \"./**/*.js\" \"./**/*.jsx\" --write",
+    "code-format-check": "npx eslint \"./**/*.js\" \"./**/*.jsx\" && npx prettier \"./**/*.js\" \"./**/*.jsx\" --check"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "jest-expo",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base)"
+    ]
   },
   "dependencies": {
     "cryptiles": "^4.1.3",
@@ -27,7 +49,10 @@
     "expo-font": "~5.0.1",
     "expo-image-picker": "~5.0.2",
     "expo-permissions": "~5.0.1",
+    "expo-react-native-adapter": "^3.0.1",
+    "lodash": "^4.17.15",
     "native-base": "^2.13.0",
+    "prop-types": "^15.7.2",
     "react": "16.8.3",
     "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
     "react-native-autolink": "^1.6.0",
@@ -41,6 +66,16 @@
     "react-native-scalable-image": "^0.4.0",
     "react-native-swipe-gestures": "^1.0.3",
     "react-native-switch-pro": "^1.0.2-beta",
+    "react-native-vector-icons": "^6.6.0",
     "react-navigation": "^3.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint --cache --fix",
+    "*.{js,jsx,css,md}": "prettier --write"
   }
 }

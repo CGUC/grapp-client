@@ -1,8 +1,6 @@
-import { StyleSheet, Dimensions } from "react-native";
-const { height, width } = Dimensions.get('window');
-import defaultStyles from '../../styles/styles';
+import { StyleSheet } from 'react-native';
 
-export default (styles = StyleSheet.create({
+export default StyleSheet.create({
   view: {
     width: '100%',
     paddingLeft: 5,
@@ -123,4 +121,4 @@ export default (styles = StyleSheet.create({
     marginTop: 7,
     marginBottom: 12,
   },
-}));
+});

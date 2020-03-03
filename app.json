@@ -1,4 +1,4 @@
-  {
+{
   "expo": {
     "name": "Skybunk",
     "description": "By Grebel, for Grebel.",
@@ -17,10 +17,7 @@
         "foregroundImage": "./assets/icon-front.png",
         "backgroundImage": "./assets/icon-back.png"
       },
-      "permissions": [
-        "CAMERA",
-        "CAMERA_ROLL"
-      ],
+      "permissions": ["CAMERA", "CAMERA_ROLL"],
       "versionCode": 8
     },
     "notification": {

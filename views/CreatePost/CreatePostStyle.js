@@ -1,13 +1,14 @@
-import { StyleSheet, Dimensions, Platform } from "react-native";
-const { height, width } = Dimensions.get('window');
-import defaultStyles from '../../styles/styles'
+import { StyleSheet, Dimensions, Platform } from 'react-native';
+import defaultStyles from '../../styles/styles';
 
-export default (styles = StyleSheet.create({
-   modal: {
+const { height, width } = Dimensions.get('window');
+
+export default StyleSheet.create({
+  modal: {
     flex: 1,
     justifyContent: 'flex-end',
     alignItems: 'center',
-    backgroundColor: '#00000050'
+    backgroundColor: '#00000050',
   },
   headerText: {
     fontSize: 16,
@@ -15,9 +16,9 @@ export default (styles = StyleSheet.create({
     paddingRight: 13,
   },
   channelImage: {
-    height:22,
+    height: 22,
     width: 22,
-    tintColor: "#000"
+    tintColor: '#000',
   },
   inputIOS: {
     fontSize: 16,
@@ -34,14 +35,14 @@ export default (styles = StyleSheet.create({
     marginLeft: 50, // to ensure the text is never behind the icon
   },
   view: {
-    width: width,
+    width,
     minHeight: 330,
-    maxHeight: height-220,
+    maxHeight: height - 220,
     backgroundColor: '#DDDDDD',
   },
   poll: {
-    width: width-10,
-    height: height-350,
+    width: width - 10,
+    height: height - 350,
   },
   textBox: {
     fontSize: 16,
@@ -61,25 +62,27 @@ export default (styles = StyleSheet.create({
     height: 40,
     marginLeft: 5,
     marginRight: 5,
-    ...defaultStyles.primaryColor
+    ...defaultStyles.primaryColor,
   },
   selectChannelView: {
     margin: 10,
-    ...(Platform.OS !== 'ios') ? {
-      borderWidth: 1,
-      borderColor: '#d6d7da',
-      borderRadius: 4,
-      color: 'black',
-    } : null
+    ...(Platform.OS !== 'ios'
+      ? {
+          borderWidth: 1,
+          borderColor: '#d6d7da',
+          borderRadius: 4,
+          color: 'black',
+        }
+      : null),
   },
   postContentView: {
-    margin: 5
+    margin: 5,
   },
   ToolbarView: {
-    margin: 5
+    margin: 5,
   },
   mediaPreviewView: {
     margin: 5,
-    marginTop: 0
-  }
-}));
+    marginTop: 0,
+  },
+});

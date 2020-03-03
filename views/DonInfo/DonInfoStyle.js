@@ -1,7 +1,6 @@
-import { Dimensions, StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
-const { height, width } = Dimensions.get('window');
-export default (styles = StyleSheet.create({
+export default StyleSheet.create({
   noMoreUsers: {
     textAlign: 'center',
     marginTop: 10,
@@ -9,6 +8,6 @@ export default (styles = StyleSheet.create({
   },
   icon: {
     marginRight: 20,
-    color: "white"
+    color: 'white',
   },
-}));
+});

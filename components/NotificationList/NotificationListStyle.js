@@ -1,18 +1,18 @@
-import { StyleSheet } from "react-native";
-import defaultStyles from "../../styles/styles"
+import { StyleSheet } from 'react-native';
+import defaultStyles from '../../styles/styles';
 
-export default (styles = StyleSheet.create({
+export default StyleSheet.create({
   notificationCardUnseen: {
-    alignSelf: "stretch",
-    justifyContent: "center",
+    alignSelf: 'stretch',
+    justifyContent: 'center',
     borderBottomColor: '#CCCCCC',
     borderBottomWidth: 1,
     padding: 10,
     backgroundColor: '#fff2f5',
   },
   notificationCardSeen: {
-    alignSelf: "stretch",
-    justifyContent: "center",
+    alignSelf: 'stretch',
+    justifyContent: 'center',
     borderBottomColor: '#CCCCCC',
     borderBottomWidth: 1,
     padding: 10,
@@ -20,11 +20,11 @@ export default (styles = StyleSheet.create({
   },
   notificationTitleSeen: {
     fontSize: 18,
-    textAlign:'left',
+    textAlign: 'left',
   },
   notificationTitleUnseen: {
     fontSize: 18,
-    textAlign:'left',
+    textAlign: 'left',
     fontWeight: 'bold',
   },
   notificationBodyUnseen: {
@@ -35,9 +35,10 @@ export default (styles = StyleSheet.create({
     fontSize: 15,
   },
   markNotifsSeenButton: {
-    position:"absolute", 
-    zIndex: 1, 
-    bottom:20, 
-    right:10,
-  ...defaultStyles.primaryColor}
-}));
+    position: 'absolute',
+    zIndex: 1,
+    bottom: 20,
+    right: 10,
+    ...defaultStyles.primaryColor,
+  },
+});

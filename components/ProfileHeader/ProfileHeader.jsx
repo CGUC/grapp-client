@@ -1,15 +1,11 @@
-import React from "react";
-import { Alert, Text, View, Image, TouchableOpacity, ImageBackground, Platform, Linking } from "react-native";
-import { Icon } from "native-base"
+import React from 'react';
+import { Text, View, Image, TouchableOpacity, Platform } from 'react-native';
 import * as Permissions from 'expo-permissions';
 import * as ImagePicker from 'expo-image-picker';
-import styles from "./ProfileHeaderStyle";
-import config from '../../config';
-import {getProfilePicture, setProfilePicture} from '../../helpers/imageCache'
+import styles from './ProfileHeaderStyle';
+import { getProfilePicture, setProfilePicture } from '../../helpers/imageCache';
 
 export default class ProfileHeader extends React.Component {
-  static navigationOptions = { header: null };
-
   constructor(props) {
     super(props);
     this.state = {
@@ -18,32 +14,15 @@ export default class ProfileHeader extends React.Component {
   }
 
   componentDidMount() {
-    getProfilePicture(this.props.user._id).then(pic => {
-      this.setState({
-        profilePicture: pic,
+    getProfilePicture(this.props.user._id)
+      .then(pic => {
+        this.setState({
+          profilePicture: pic,
+        });
+      })
+      .catch(() => {
+        this.props.navigation.navigate('Auth');
       });
-    }).catch(error => {
-      this.props.navigation.navigate('Auth');
-    });
-  }
-
-  render() {
-    return (
-        <View style={styles.ProfileHeader}>
-          <TouchableOpacity onPress={this.pickImage}>
-            <Image
-              style={styles.profilePicture}
-              source={{ uri: `data:image/png;base64,${this.state.profilePicture}` }}
-            />
-          </TouchableOpacity>
-          <Text style={styles.profileNameText}>
-            {this.props.user.firstName} {this.props.user.lastName}
-          </Text>
-          <Text style={styles.profileNameText}>
-            {`( ${this.props.user.username} )`}
-          </Text>
-        </View>
-    );
   }
 
   pickImage = async () => {
@@ -52,7 +31,7 @@ export default class ProfileHeader extends React.Component {
      */
     if (Platform.OS === 'ios') {
       const { status: existingStatus } = await Permissions.getAsync(
-        Permissions.CAMERA_ROLL
+        Permissions.CAMERA_ROLL,
       );
       let finalStatus = existingStatus;
 
@@ -69,7 +48,7 @@ export default class ProfileHeader extends React.Component {
       }
     }
 
-    let result = await ImagePicker.launchImageLibraryAsync({
+    const result = await ImagePicker.launchImageLibraryAsync({
       allowsEditing: true,
       base64: true,
       aspect: [1, 1],
@@ -77,10 +56,7 @@ export default class ProfileHeader extends React.Component {
     });
 
     if (!result.cancelled) {
-      setProfilePicture(
-        this.props.user._id,
-        result.uri
-      )
+      setProfilePicture(this.props.user._id, result.uri)
         .then(pic => {
           this.setState({
             profilePicture: pic,
@@ -90,5 +66,30 @@ export default class ProfileHeader extends React.Component {
           console.error(err);
         });
     }
+
+    return result;
+  };
+
+  static navigationOptions = { header: null };
+
+  render() {
+    return (
+      <View style={styles.ProfileHeader}>
+        <TouchableOpacity onPress={this.pickImage}>
+          <Image
+            style={styles.profilePicture}
+            source={{
+              uri: `data:image/png;base64,${this.state.profilePicture}`,
+            }}
+          />
+        </TouchableOpacity>
+        <Text style={styles.profileNameText}>
+          {this.props.user.firstName} {this.props.user.lastName}
+        </Text>
+        <Text style={styles.profileNameText}>
+          {`( ${this.props.user.username} )`}
+        </Text>
+      </View>
+    );
   }
 }

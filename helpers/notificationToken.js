@@ -3,9 +3,9 @@ import * as Permissions from 'expo-permissions';
 import ApiClient from '../ApiClient';
 
 module.exports = {
-  registerForPushNotificationsAsync: async function (user) {
+  async registerForPushNotificationsAsync(user) {
     const { status: existingStatus } = await Permissions.getAsync(
-      Permissions.NOTIFICATIONS
+      Permissions.NOTIFICATIONS,
     );
     let finalStatus = existingStatus;
 
@@ -23,22 +23,19 @@ module.exports = {
       return null;
     }
 
-
     // Get the token that uniquely identifies this device
-    Notifications.getExpoPushTokenAsync().then(token => {
-      if (token) {
-        ApiClient.post(
-          `/users/${user._id}/notificationToken`,
-          {notificationToken: token},
-          {authorized: true}
-        )
-        .then(response => {})
-        .catch(err => console.error(err));
-      }
-      else {
-        console.error('Error getting notification token!');
-      }
-    })
-    .catch(err => console.error(err));
-  }
-}
+    return Notifications.getExpoPushTokenAsync()
+      .then(token => {
+        if (token) {
+          ApiClient.post(
+            `/users/${user._id}/notificationToken`,
+            { notificationToken: token },
+            { authorized: true },
+          ).catch(err => console.error(err));
+        } else {
+          console.error('Error getting notification token!');
+        }
+      })
+      .catch(err => console.error(err));
+  },
+};

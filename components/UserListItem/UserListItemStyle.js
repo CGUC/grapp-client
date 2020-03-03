@@ -1,15 +1,15 @@
-import { Dimensions, StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
-export default (styles = StyleSheet.create({
+export default StyleSheet.create({
   rowContainer: {
     flex: 1,
     flexDirection: 'row',
-    justifyContent: 'flex-start'
+    justifyContent: 'flex-start',
   },
   profilePicThumbnail: {
-		borderWidth: 0
+    borderWidth: 0,
   },
   userName: {
-    marginLeft: 20
-  }
-}))
+    marginLeft: 20,
+  },
+});

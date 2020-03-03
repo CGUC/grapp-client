@@ -1,20 +1,21 @@
-import { StyleSheet, Dimensions } from "react-native";
-const { height, width } = Dimensions.get('window');
+import { StyleSheet, Dimensions } from 'react-native';
 
-export default (styles = StyleSheet.create({
+const { width } = Dimensions.get('window');
+
+export default StyleSheet.create({
   view: {
     alignSelf: 'center',
     borderColor: '#d6d7da',
     borderWidth: 1,
     borderRadius: 5,
-    padding: 10
+    padding: 10,
   },
   pollView: {
-    width: width- 10
+    width: width - 10,
   },
   image: {
     width: 300,
     height: 300,
-    alignSelf: 'center'
-  }
-}));
+    alignSelf: 'center',
+  },
+});

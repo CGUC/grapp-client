@@ -1,8 +1,9 @@
-import { StyleSheet, Dimensions } from "react-native";
-const { height, width } = Dimensions.get('window');
-import defaultStyles from'../../styles/styles'
+import { StyleSheet, Dimensions } from 'react-native';
+import defaultStyles from '../../styles/styles';
 
-export default (styles = StyleSheet.create({
+const { width } = Dimensions.get('window');
+
+export default StyleSheet.create({
   card: {
     flex: 0,
     elevation: 0,
@@ -10,54 +11,54 @@ export default (styles = StyleSheet.create({
     marginBottom: 0,
     borderColor: 'rgba(0, 0, 0, 0.0)',
     backgroundColor: 'rgba(0, 0, 0, 0.0)',
-    minWidth: width
+    minWidth: width,
   },
   cardItem: {
     backgroundColor: 'rgba(0, 0, 0, 0.0)',
     borderBottomWidth: 1,
-    borderBottomColor: '#dbdbdb'
+    borderBottomColor: '#dbdbdb',
   },
   profilePicThumbnail: {
     borderWidth: 0,
     marginRight: 5,
-    marginTop: 5
+    marginTop: 5,
   },
   textContainer: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'flex-start',
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
   },
   textAuthor: {
     paddingLeft: 5,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   textContent: {
     paddingLeft: 5,
     height: 38,
     flexGrow: 1,
-    flexShrink: 1
+    flexShrink: 1,
   },
   editButtonsContainer: {
     flex: 1,
     flexDirection: 'column',
     justifyContent: 'flex-end',
     alignItems: 'center',
-    backgroundColor: '#00000050'
+    backgroundColor: '#00000050',
   },
   view: {
-    width: width,
+    width,
     height: 100,
     flexDirection: 'column',
-  	justifyContent: 'flex-end',
-  	paddingBottom: 5
+    justifyContent: 'flex-end',
+    paddingBottom: 5,
   },
   editButton: {
     marginTop: 5,
     height: 40,
     marginLeft: 5,
     marginRight: 5,
-    ...defaultStyles.primaryColor
+    ...defaultStyles.primaryColor,
   },
   deleteButton: {
     marginTop: 5,
@@ -68,13 +69,13 @@ export default (styles = StyleSheet.create({
   },
   title: {
     flexDirection: 'row',
-  	justifyContent: 'space-between',
-  	paddingBottom: 5
+    justifyContent: 'space-between',
+    paddingBottom: 5,
   },
   editorView: {
     flexDirection: 'row',
     borderWidth: 1,
-    borderRadius: 5
+    borderRadius: 5,
   },
   commentButton: {
     flexDirection: 'row',
@@ -82,10 +83,10 @@ export default (styles = StyleSheet.create({
     alignItems: 'center',
     flexGrow: 0,
     margin: 3,
-    marginRight: 9
+    marginRight: 9,
   },
   commentButtonText: {
     fontStyle: 'italic',
-    textAlignVertical: 'center'
-  }
-}));
+    textAlignVertical: 'center',
+  },
+});

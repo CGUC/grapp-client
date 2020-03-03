@@ -1,16 +1,17 @@
 ## TERMS & CONDITIONS
+
 _Last updated: August 31, 2019_
 
 Please read these Terms and Conditions carefully before using the Skybunk mobile application operated by Project Stairwell.
 
 Your access to and use of the Service is conditioned on your acceptance of and compliance with this Agreement. The Agreement applies to all visitors, users and others who access or use the Application.
 
-*BY DOWNLOADING AND USING THE APPLICATION, YOU ARE AGREEING TO THE FOLLOWING:*
+_BY DOWNLOADING AND USING THE APPLICATION, YOU ARE AGREEING TO THE FOLLOWING:_
 
-* I understand that I am posting any personal information at my own risk
-* I understand that I should use a completely original password
-* I understand that using a fake name can result in account deletion and restricted or terminated access to the Application
-* I agree to all of the Terms and Conditions outlined in the Agreement
+- I understand that I am posting any personal information at my own risk
+- I understand that I should use a completely original password
+- I understand that using a fake name can result in account deletion and restricted or terminated access to the Application
+- I agree to all of the Terms and Conditions outlined in the Agreement
 
 **1. Definitions**
 In this Agreement, unless the context clearly indicates otherwise, the following words and expressions shall have the meaning ascribed:
@@ -31,20 +32,19 @@ In this Agreement, unless the context clearly indicates otherwise, the following
 
 In order to maintain a respectful community, the User profile must never contain:
 
-* A name other than the one used in everyday life.
-* Inaccurate information about the user.
-* An offensive or otherwise inappropriate profile picture, bio, or other public information.
-
+- A name other than the one used in everyday life.
+- Inaccurate information about the user.
+- An offensive or otherwise inappropriate profile picture, bio, or other public information.
 
 **3. Content Regulations**
 
 Skybunk is a vessel in which Users associated with an Institution can communicate and interact. You may NOT post content:
 
-* That is unlawful, misleading, discriminatory or fraudulent.
-* That infringes or violates someone else's rights.
-* That causes or is a virus, malicious code, or other content that causes the disabling of the app or the user’s device.
+- That is unlawful, misleading, discriminatory or fraudulent.
+- That infringes or violates someone else's rights.
+- That causes or is a virus, malicious code, or other content that causes the disabling of the app or the user’s device.
 
-Please remember that we want to *enhance* community, so we ask that you use face-to-face communication wherever possible and keep all posts positive and inclusive.
+Please remember that we want to _enhance_ community, so we ask that you use face-to-face communication wherever possible and keep all posts positive and inclusive.
 
 Project Stairwell reserves the right to delete any content without notice. The Content Administrators may also have this privilege, as decided by the Institution.
 
@@ -56,7 +56,7 @@ Skybunk is a communication app created by Conrad Grebel University College stude
 
 The Application may contain links to third-party websites or services that are not owned or controlled by Project Stairwell.
 
-Project Stairwell has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Project Stairwell shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such websites or services. 
+Project Stairwell has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Project Stairwell shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such websites or services.
 
 **6. Changes to Terms and Conditions**
 
@@ -64,11 +64,12 @@ Supplemental Terms and Conditions or other documents that may be posted on Skybu
 
 **7. Content Property**
 
-Unless otherwise indicated, Skybunk is our proprietary property and all source code, databases, functionality, software, website designs, audio video, text, photographs, and graphics on it (collectively, the "Content") and the trademarks, service marks, and logos contained therein (the "Marks") are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of Canada, foreign jurisdictions, and international conventions. The Content and the Marks are provided on the Site "AS IS" for your information and personal use only. Except as expressly provided in these Terms, no part of Skybunk and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission. 
+Unless otherwise indicated, Skybunk is our proprietary property and all source code, databases, functionality, software, website designs, audio video, text, photographs, and graphics on it (collectively, the "Content") and the trademarks, service marks, and logos contained therein (the "Marks") are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of Canada, foreign jurisdictions, and international conventions. The Content and the Marks are provided on the Site "AS IS" for your information and personal use only. Except as expressly provided in these Terms, no part of Skybunk and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.
 
 **8. Access to Application**
 
 Project Stairwell reserves the right to remove your account and all of its data if:
-* You are not affiliated with your host Institution in the current academic year.
-* You produce any content that violates the Content Regulations
-* Any other reason agreed upon by Project Stairwell or the Content Administrators.
+
+- You are not affiliated with your host Institution in the current academic year.
+- You produce any content that violates the Content Regulations
+- Any other reason agreed upon by Project Stairwell or the Content Administrators.
